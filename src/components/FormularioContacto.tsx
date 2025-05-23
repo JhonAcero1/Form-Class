@@ -7,8 +7,8 @@ export default function FormularioContacto() {
     e.preventDefault();
     console.log(`Nombre: ${nombre}, Mensaje: ${mensaje}`);
     setEnviado(true);
-    //setNombre("");
-    //setMensaje("");
+    setNombre("");
+    setMensaje("");
   };
   return (
     <div>
@@ -26,8 +26,6 @@ export default function FormularioContacto() {
       <form onSubmit={manejarEnvio}>
         <div>
           <label htmlFor="nombre">Nombre:</label>
-
-          <label htmlFor="Correo">Correo:</label>
           <br />
           <input
             id="nombre"
