@@ -1,4 +1,4 @@
-import FormularioContacto from "./components/FormularioContacto";
+//import FormularioContacto from "./components/FormularioContacto";
 import FormularioEstudiante from "./components/FormularioEstudiante"; 
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
       <h1>Mi App con React + TypeScript</h1>
 
       
-      <FormularioContacto />
+      
 
       <hr />
 

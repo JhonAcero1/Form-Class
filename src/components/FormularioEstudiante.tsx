@@ -1,3 +1,5 @@
+// PRACTICA A DESARROLLAR FORMULARIO DE ESTUDIANTES
+
 import { useState, FormEvent } from "react";
 
 export default function FormularioEstudiante() {
@@ -20,16 +22,25 @@ export default function FormularioEstudiante() {
         <div
           style={{ marginTop: "10px", background: "black", padding: "10px" }}
         >
-          <p><strong>¡Gracias {nombre}!</strong></p>
-          <p>Hemos registrado tu correo: <strong>{correo}</strong></p>
-          <p>Carrera: <strong>{carrera}</strong></p>
-          <p>Comentarios: <strong>{comentarios}</strong></p>
+          <p>
+            <strong>¡Gracias {nombre}!</strong>
+          </p>
+          <p>
+            Hemos registrado tu correo: <strong>{correo}</strong>
+          </p>
+          <p>
+            Carrera: <strong>{carrera}</strong>
+          </p>
+          <p>
+            Comentarios: <strong>{comentarios}</strong>
+          </p>
         </div>
       )}
 
       <form onSubmit={manejarEnvio}>
         <div>
-          <label htmlFor="nombre">Nombre completo:</label><br />
+          <label htmlFor="nombre">Nombre completo:</label>
+          <br />
           <input
             id="nombre"
             type="text"
@@ -40,7 +51,8 @@ export default function FormularioEstudiante() {
         </div>
 
         <div>
-          <label htmlFor="correo">Correo electrónico:</label><br />
+          <label htmlFor="correo">Correo electrónico:</label>
+          <br />
           <input
             id="correo"
             type="email"
@@ -51,7 +63,8 @@ export default function FormularioEstudiante() {
         </div>
 
         <div>
-          <label htmlFor="carrera">Carrera o especialidad:</label><br />
+          <label htmlFor="carrera">Carrera o especialidad:</label>
+          <br />
           <input
             id="carrera"
             type="text"
@@ -62,7 +75,8 @@ export default function FormularioEstudiante() {
         </div>
 
         <div>
-          <label htmlFor="comentarios">Comentarios:</label><br />
+          <label htmlFor="comentarios">Comentarios:</label>
+          <br />
           <textarea
             id="comentarios"
             value={comentarios}

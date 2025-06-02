@@ -1,3 +1,5 @@
+/* PRACTICA EN CLASES
+
 import { useState, FormEvent } from "react";
 export default function FormularioContacto() {
   const [nombre, setNombre] = useState("");
@@ -50,3 +52,4 @@ export default function FormularioContacto() {
     </div>
   );
 }
+/*
